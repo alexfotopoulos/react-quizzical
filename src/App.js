@@ -2,6 +2,7 @@ import { useState } from 'react'
 import './App.css';
 import GameButton from './components/GameButton'
 import Quiz from './components/Quiz'
+import { QuizContextProvider } from './store/quiz-context'
 
 export default function App() {
   const [isPlaying, setIsPlaying] = useState(false)
@@ -20,7 +21,11 @@ export default function App() {
       </>
     )
   } else {
-    content = <Quiz />
+    content = (
+      <QuizContextProvider>
+        <Quiz />
+      </QuizContextProvider>
+    )
   }
 
   return (
