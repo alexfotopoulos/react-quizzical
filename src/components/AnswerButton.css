@@ -29,6 +29,7 @@
 }
 
 .AnswerButton-incorrect {
+    opacity: .6;
     background-color: rgb(216, 172, 172);
     color:rgb(61, 78, 123);
     border: 1px solid rgb(61, 78, 123);
