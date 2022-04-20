@@ -9,6 +9,7 @@ const QuizContext = createContext({
     addCorrectAnswers: (answer) => {},
     addSelections: (selection) => {},
     checkAnswers: (answer) => {},
+    reset: () => {}
 });
 
 export function QuizContextProvider(props) {
@@ -44,6 +45,14 @@ export function QuizContextProvider(props) {
         }
         setNumberCorrect(counter)
     }
+
+    function handleReset() {
+        setData([])
+        setCorrectAnswers([])
+        setNumberCorrect(null)
+        setSelections({})
+    }
+
     const context = {
         data,
         correctAnswers,
@@ -52,7 +61,8 @@ export function QuizContextProvider(props) {
         addData: handleAddData,
         addCorrectAnswers: handleAddCorrectAnswers,
         addSelections: handleAddSelections,
-        checkAnswers: handleCheckAnswers
+        checkAnswers: handleCheckAnswers,
+        reset: handleReset
     }
 
     return <QuizContext.Provider value={context}>{props.children}</QuizContext.Provider>

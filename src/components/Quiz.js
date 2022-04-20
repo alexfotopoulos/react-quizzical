@@ -6,6 +6,7 @@ import Question from './Question'
 
 export default function () {
     const [isGameOver, setIsGameOver] = useState(false)
+    const [fetchData, setFetchData] = useState(false)
     const quizCtx = useContext(QuizContext)
 
     function b64DecodeUnicode(str) {
@@ -37,7 +38,7 @@ export default function () {
             quizCtx.addCorrectAnswers(data.results)
         }
         fetchData()
-    }, [])
+    }, [fetchData])
 
     function handleSubmit() {
         let selections = quizCtx.selections
@@ -48,6 +49,9 @@ export default function () {
 
     function handleReset() {
         console.log('resetting game...')
+        quizCtx.reset()
+        setIsGameOver(false)
+        setFetchData(prevFetchData => (!prevFetchData))
     }
 
     return (
