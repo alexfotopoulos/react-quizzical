@@ -19,7 +19,7 @@ export default function () {
             quizCtx.addCorrectAnswers(res)
         }
         getData()
-    }, [fetchData])
+    }, [reset])
 
     function handleSubmit() {
         let selections = quizCtx.selections
