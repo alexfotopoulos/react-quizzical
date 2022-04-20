@@ -17,3 +17,23 @@
     min-width: 4rem;
     padding: 0 1rem
 }
+
+.AnswerButton-correct {
+    background-color: rgb(172, 216, 177);
+    color:rgb(61, 78, 123);
+    border: 1px solid rgb(61, 78, 123);
+    margin-right: 1.5rem;
+    border-radius: 1rem;
+    min-width: 4rem;
+    padding: 0 1rem
+}
+
+.AnswerButton-incorrect {
+    background-color: rgb(216, 172, 172);
+    color:rgb(61, 78, 123);
+    border: 1px solid rgb(61, 78, 123);
+    margin-right: 1.5rem;
+    border-radius: 1rem;
+    min-width: 4rem;
+    padding: 0 1rem
+}

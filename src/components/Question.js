@@ -19,8 +19,12 @@ export default function Question(props) {
                 <AnswerButton
                     key={choice}
                     answerText={choice}
-                    classText={choice === selected ? 'AnswerButton-selected' : 'AnswerButton'}
+                    classText={
+                        props.gameover ? ((choice === selected && quizCtx.correctAnswers.includes(choice)) ? 'AnswerButton-correct' : (choice === selected ? 'AnswerButton-incorrect' : (quizCtx.correctAnswers.includes(choice) ? 'AnswerButton-correct' : 'AnswerButton'))) : 
+                        (choice === selected ? 'AnswerButton-selected' : 'AnswerButton')
+                    }
                     onSelect={handleSelect}
+                    correct={quizCtx.correctAnswers.includes(choice) ? true : false}
                 />
             ))}
             </div>

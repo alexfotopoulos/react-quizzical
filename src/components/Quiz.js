@@ -39,7 +39,7 @@ export default function () {
     return (
         <div className='Quiz'>
             {quizCtx.data.map((q, idx) => (
-                <Question id={idx} key={q.question} question={q.question} choices={q.choices} name={`question-${idx}`} />
+                <Question id={idx} key={q.question} question={q.question} choices={q.choices} name={`question-${idx}`} gameover={isGameOver}/>
             ))}
             <div className='Quiz-bottomGroup'>
             {isGameOver && <p>{`You answered ${quizCtx.numberCorrect} question(s) correctly`}</p>}

@@ -5,7 +5,7 @@ import Quiz from './components/Quiz'
 import { QuizContextProvider } from './store/quiz-context'
 
 export default function App() {
-  const [isPlaying, setIsPlaying] = useState(true)
+  const [isPlaying, setIsPlaying] = useState(false)
 
   function handleStartQuiz() {
     setIsPlaying(true)

@@ -2,7 +2,7 @@ import { useState } from 'react'
 import './AnswerButton.css'
 
 export default function AnswerButton(props) {
-    const [isCorrect, setIsCorrect] = useState(null);
+    const [selected, setSelected] = useState(null);
 
     function handleSelect() {
         props.onSelect(props.answerText)
