@@ -1,6 +1,7 @@
 import { useState, useContext } from 'react'
 import QuizContext from '../store/quiz-context'
 import AnswerButton from "./AnswerButton"
+import './Question.css'
 
 export default function Question(props) {
     const [selected, setSelected] = useState(null);
@@ -11,16 +12,18 @@ export default function Question(props) {
         quizCtx.addSelections(choice, questionId)
     }
     return (
-        <>
-            <h3>{props.question}</h3>
+        <div className='Question'>
+            <h4>{props.question}</h4>
+            <div className='Question-answerButtonGroup'>
             {props.choices.map(choice => (
                 <AnswerButton
                     key={choice}
                     answerText={choice}
-                    classText={choice === selected ? 'AnswerButton-selected' : ''}
+                    classText={choice === selected ? 'AnswerButton-selected' : 'AnswerButton'}
                     onSelect={handleSelect}
                 />
             ))}
-        </>
+            </div>
+        </div>
     )
 }

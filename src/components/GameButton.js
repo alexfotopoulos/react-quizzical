@@ -1,9 +1,11 @@
+import './GameButton.css'
+
 export default function GameButton(props) {
     function handleClick() {
         props.action();
     }
 
     return (
-        <button onClick={handleClick}>{props.text}</button>
+        <button className='GameButton-button' onClick={handleClick}>{props.text}</button>
     )
 }

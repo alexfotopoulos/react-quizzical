@@ -1,3 +1,19 @@
+.AnswerButton {
+    background: transparent;
+    color:rgb(61, 78, 123);
+    border: 1px solid rgb(61, 78, 123);
+    margin-right: 1.5rem;
+    border-radius: 1rem;
+    min-width: 4rem;
+    padding: 0 1rem
+}
+
 .AnswerButton-selected {
-    background-color: rgb(128, 157, 206);
+    background-color: rgb(179, 198, 230);
+    color:rgb(61, 78, 123);
+    border: 1px solid rgb(61, 78, 123);
+    margin-right: 1.5rem;
+    border-radius: 1rem;
+    min-width: 4rem;
+    padding: 0 1rem
 }

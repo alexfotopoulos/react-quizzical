@@ -1,0 +1,15 @@
+.Quiz {
+    max-width: 70%;
+}
+
+.Quiz-bottomGroup {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.5rem;
+}
+
+.Quiz-bottomGroup p {
+    font-weight: bold;
+}

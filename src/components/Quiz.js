@@ -6,6 +6,7 @@ import Question from './Question'
 import { shuffle } from '../helpers'
 import { b64DecodeUnicode } from '../helpers'
 import { fetchData } from '../helpers'
+import './Quiz.css'
 
 export default function () {
     const [isGameOver, setIsGameOver] = useState(false)
@@ -36,14 +37,14 @@ export default function () {
     }
 
     return (
-        <>
-            <div>
-                {quizCtx.data.map((q, idx) => (
-                    <Question id={idx} key={q.question} question={q.question} choices={q.choices} name={`question-${idx}`}/>
-                ))}
-            </div>
+        <div className='Quiz'>
+            {quizCtx.data.map((q, idx) => (
+                <Question id={idx} key={q.question} question={q.question} choices={q.choices} name={`question-${idx}`} />
+            ))}
+            <div className='Quiz-bottomGroup'>
             {isGameOver && <p>{`You answered ${quizCtx.numberCorrect} question(s) correctly`}</p>}
-            {!isGameOver ? <GameButton action={handleSubmit} text={"Check Answers"}/>  : <GameButton action={handleReset} text={"Play Again"}/>}
-        </>
+            {!isGameOver ? <GameButton action={handleSubmit} text={"Check Answers"} /> : <GameButton action={handleReset} text={"Play Again"} />}
+            </div>
+        </div>
     )
 }
