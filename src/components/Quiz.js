@@ -7,6 +7,7 @@ import Question from './Question'
 import { shuffle } from '../helpers'
 import { b64DecodeUnicode } from '../helpers'
 import './Quiz.css'
+import Card from './Card'
 
 export default function () {
     const [isGameOver, setIsGameOver] = useState(false)
@@ -72,10 +73,12 @@ export default function () {
     )
 
     return (
+        <Card>
         <div className='Quiz'>
             {isLoading ? <Spinner animation="border" role="status">
                 <span className="visually-hidden">Loading...</span>
             </Spinner> : content}
         </div>
+        </Card>
     )
 }
