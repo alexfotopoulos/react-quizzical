@@ -13,7 +13,7 @@ export default function Question(props) {
     }
     return (
         <div className='Question'>
-            <h4>{props.question}</h4>
+            <span>{props.question}</span>
             <div className='Question-answerButtonGroup'>
             {props.choices.map(choice => (
                 <AnswerButton

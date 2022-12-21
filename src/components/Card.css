@@ -1,12 +1,27 @@
 .Card {
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: center;*/
+    text-align: center;
     background-color: rgb(227, 224, 224);
     border: 10px solid white;
     border-radius: 2rem;
-    min-height: 700px;
-    width: 50%;
-    padding-top: 3rem;
+    width: 70%;
+    padding: 2rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media (max-width: 1000px) {
+    .Card {
+        width: 90%;
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: translate(0, 0);
+        margin: 2rem;
+    }
 }

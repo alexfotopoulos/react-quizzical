@@ -1,4 +1,6 @@
 .Question {
-    /* margin-bottom: 1rem; */
-    padding-bottom: 1rem;
+    font-size: 2rem;
+    text-align: start;
+    font-weight: 500;
+    margin-bottom: 0;
 }

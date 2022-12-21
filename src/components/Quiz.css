@@ -1,15 +1,12 @@
 .Quiz {
-    max-width: 70%;
+    padding: 1.5rem;
 }
 
 .Quiz-bottomGroup {
+    font-size: 1.6rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-top: 1.5rem;
-}
-
-.Quiz-bottomGroup p {
-    font-weight: bold;
 }

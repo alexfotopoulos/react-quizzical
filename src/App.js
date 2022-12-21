@@ -17,7 +17,7 @@ export default function App() {
     content = (
       <Card>
         <h1>Quizzical</h1>
-        <h6 className='App-description'>Welcome to Quizzial! Click below to start your quiz!</h6>
+        <p className='App-description'>Welcome to Quizzial! Click below to start your quiz!</p>
         <GameButton action={handleStartQuiz} text="Start Quiz!" />
       </Card>
     )
