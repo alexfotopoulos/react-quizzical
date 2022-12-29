@@ -4,7 +4,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Live link
 
-THe deployed demo of React-Quizzical can be found [here](https://foto-quizzical.herokuapp.com").
+The deployed demo of React-Quizzical can be found [here](https://foto-quizzical.herokuapp.com").
 
 ## Description
 
