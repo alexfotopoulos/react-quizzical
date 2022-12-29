@@ -2,15 +2,9 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Getting Started
+## Live link
 
-First, run the development server:
-
-```bash
-npm start
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+THe deployed demo of React-Quizzical can be found [here](https://foto-quizzical.herokuapp.com").
 
 ## Description
 
